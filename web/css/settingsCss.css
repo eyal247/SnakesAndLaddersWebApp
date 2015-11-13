@@ -1,0 +1,120 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11/09/2014, 16:58:27
+    Author     : EyalEngel
+*/
+
+body { 
+    background: url(../images/SettingsScreen.jpg) no-repeat;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+/*    min-height:100%;*/
+    overflow: hidden;
+    //background-position: center;
+    background-size: cover;
+}
+
+form{
+    margin-top: 150px;
+}
+
+form>div{
+    margin-top: 20px;
+}
+
+#continue-button{
+    width: 160px;  
+    margin-left: 40px;
+    height: 45px;
+    padding-top: 8px;
+}
+
+#back-to-menu-button{
+    width: 160px;
+    padding-top: 8px;
+    height: 45px;
+    position: relative;
+    margin-top: -50px;
+}
+
+.bottom-line{
+    margin-top: -35px;
+    position: absolute;
+    z-index: 0;
+    width: 500px;
+    margin-left: 650px;
+}
+
+.name-text-box{
+    width: 150px;
+}
+
+.settings-labels {
+    font-family: sans-serif;
+    color: darkblue;
+    font-size: 18px;
+    margin-right: 5px;
+    margin-left: 20px;
+}
+
+input{
+    width: auto;
+}
+
+#board-size{
+    font-size: 16px;
+}
+
+#error-message{
+    font-family: verdana bold;
+    color: firebrick;
+    font-size: 24px;
+    position: absolute;
+    height: 30px;
+    width: 800px;
+    text-align: center;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+    visibility: visible; 
+}
+
+.computers {
+    display: inline;
+    margin-right: 10px;
+    width: 120px;
+}
+
+#num-of-computers{
+    margin-left: 0px;
+    margin-right: 15px;
+}
+
+#error-message-container{
+    margin-left: 430px;
+    margin-top: -80px;
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.soldier-image{
+    margin-left: 5px;
+    margin-right: 25px;
+}
+
+
+
+
+
+

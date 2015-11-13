@@ -1,0 +1,121 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18/09/2014, 16:49:56
+    Author     : EyalEngel
+*/
+html, body{
+    background: url(../images/sky.jpg) no-repeat center left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    min-height:100%;
+    overflow: hidden;
+}
+
+input.games-radio-buttons{
+    margin-right: 5px;
+    font-size: 26px;
+    color: darkblue;
+    margin-left: 5px;
+    margin-top: 2px;
+    float: left;
+
+}
+
+#loaded-players-names{
+    visibility: hidden;
+    margin-left: 50px;
+    float: right;
+    margin-right: 15px;
+    margin-left: 50px;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+
+#joining-player-label{
+    margin-top: 35px;
+    font-size: 30px;
+    color: darkblue;
+    margin-left: 400px;
+    margin-right: 10px;
+    height:30px;
+}
+
+#joining-player-text-box{
+    height: 30px;
+    width: 250px;
+}
+
+
+#joining-player-text-box:disabled{
+    border: none;
+    background-color: #d5d5d5;
+}
+
+.games-list{
+    margin-top: -20px;
+}
+
+.radio-button-label{
+    color: darkblue;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+
+#games-list-header{
+    font-size: 30px;
+    margin-left: 34%;
+    margin-top: 40px;
+    color: darkblue;
+}
+
+#waiting-players-list{
+    margin-top: 23px;
+    margin-left: 375px;
+}
+
+#radio-buttons-border{
+    border: double 0.5em;
+    margin-right: 5px;
+    border-image: url(../images/wood_bg.png) 27 round stretch;
+    border-radius: 5px;
+    width: 500px;
+    height: 300px;
+    margin-left: 390px;
+    margin-bottom: 20px;
+    overflow-y: scroll;
+}
+
+#back-to-menu-button{
+    height: auto;
+    margin-left: 450px;
+    margin-right: 10px;
+}
+
+#error-message-container{
+    height: 15px;
+}
+
+#error-message{
+    color: firebrick;
+    margin-left: 515px;
+    margin-top: 50px;
+    font: 20px verdana bold;
+    font-weight: bold;
+}
+
+.button{
+    margin-top: 20px;
+    width: 180px;
+    font-family: verdana bold;
+    font-size: 20px;
+    font-weight: bold;
+}

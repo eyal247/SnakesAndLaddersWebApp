@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<snakesandladders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Game2" number_of_soldiers="2" current_player="Eyal" xsi:noNamespaceSchemaLocation="snakesandladders.xsd">
+    <players>
+        <player type="HUMAN" name="Shai"/>
+        <player type="HUMAN" name="Eyal"/>
+    </players>
+    <board size="6">
+        <cells>
+            <cell number="1">
+                <soldiers playerName="Shai" count="3"/>
+                <soldiers playerName="Eyal" count="4"/>
+            </cell>
+            <cell number="2">
+                <soldiers playerName="Shai" count="1"/>
+            </cell>
+        </cells>
+        <ladders>
+            <ladder from="13" to="20"/>
+        </ladders>
+        <snakes>
+            <snake from="7" to="3"/>
+        </snakes>
+    </board>
+</snakesandladders>

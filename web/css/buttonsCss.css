@@ -1,0 +1,61 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25/09/2014, 14:48:05
+    Author     : EyalEngel
+*/
+
+.button {
+    position: relative;
+    font: 20px verdana bold;
+    border: none;
+    display: inline-block;
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2),
+        inset 0px -8px 0px 0px rgba(0,0,0,0.3),
+        inset 0px 2px 0px 0px rgba(255,255,255,0.5);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 15px 15px 15px;
+    outline: none;
+}
+
+.button:active {
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2),
+        inset 0px -4px 0px 0px rgba(0,0,0,0.3),
+        inset 0px 2px 0px 0px rgba(255,255,255,0.5);
+    top: 3px;
+    outline: none;
+}
+
+.button:hover{
+    color: #259b1c;
+}
+
+.wood {
+    background: url(../images/wood_bg.png);
+}
+
+#back-to-menu-button:hover {
+    color: firebrick;
+}
+
+.button:disabled{
+    cursor: default;
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2),
+        inset 0px -4px 0px 0px rgba(0,0,0,0.3),
+        inset 0px 2px 0px 0px rgba(255,255,255,0.5);
+    top: 3px;
+    outline: none;
+}
+
+.button:enabled{
+    cursor: pointer;
+}

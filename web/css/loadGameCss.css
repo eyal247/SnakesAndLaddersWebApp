@@ -1,0 +1,31 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05/10/2014, 16:18:07
+    Author     : EyalEngel
+*/
+
+#error-message{
+    color: firebrick;
+    font-size: 24px;
+    position: absolute;
+    height: 30px;
+    width: 800px;
+    text-align: center;
+    position: absolute;
+    -webkit-animation: fadein 3s;  //Safari, Chrome and Opera > 12.1 
+    -moz-animation: fadein 3s;  //Firefox < 16 
+    -ms-animation: fadein 3s;  //Internet Explorer 
+    -o-animation: fadein 3s;  //Opera < 12.1 
+    animation: fadein 3s;
+    visibility: visible; 
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+

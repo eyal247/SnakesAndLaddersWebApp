@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/Users/EyalEngel/NetBeansProjects/snakesAndLaddersWebApp/snakesandladders.xsd" uri="src/conf/xml-resources/jaxb/snakesandladders/snakesandladders.xsd"/>
+    <system systemId="file:/C:/shai/מדעי%20המחשב/Java/תרגיל%203/2.10/snakesAndLaddersWebApp/snakesandladders.xsd" uri="src/conf/xml-resources/jaxb/snakesandladders/snakesandladders.xsd"/>
+</catalog>

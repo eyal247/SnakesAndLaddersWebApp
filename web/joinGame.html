@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Snakes And Ladders</title>
+        <meta charset="UTF-8">
+        <script src="scripts/jquery-2.1.1.min.js"></script>
+        <script src="scripts/joinGameScript.js"></script>
+        <script src="scripts/utilsScript.js"></script>
+        <script src="scripts/mainMenuScript.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/joinGameCss.css">
+        <link rel="stylesheet" href="css/musicButtonCss.css">
+        <link rel="stylesheet" href="css/buttonsCss.css">
+        <link rel="SHORTCUT ICON" href="images/logo.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <audio loop autoplay id="game-audio">
+                <source src="./audio/theme.mp3" type="audio/mpeg">
+            </audio>
+            <br>
+            <div class="rss">
+                <img id="audio-image" src="./images/audio_image.png" alt="Audio" width="40" height="40" style="margin-top:-5px"/>
+                <input class="audio-button-input" type="checkbox" id="buttonThree" onchange="playOrPauseMusic()" />
+                <label class="audio-button-label" for="buttonThree"> <!-- class="attention" -->
+                    <i></i>
+                </label>
+
+            </div><!-- /rss -->
+            <form id="join-game-form" action="joinSelectedGame">
+                <label id="joining-player-label">Your Name: </label>
+                <input id="joining-player-text-box" type="text" name="username" disabled value="">
+                <div class="games-list">
+                    <label id="games-list-header">Choose a Game From List:</label><br>
+                    <div id="radio-buttons-border">
+                            <select id="loaded-players-names" onchange="updateUserNameTextBox()">
+                            </select>
+                    </div>
+                </div>
+            </form>
+            <div>
+                <div id="error-message-container"></div>
+                <button class="button wood" id="back-to-menu-button" value="Back To Menu" onclick="onClickBackToMenu()">Back To Menu</button>
+                <button class="button wood" id="join-game-button" onclick="onJoinGameClickedBeforeValidation()">Let's Play!</button>
+            </div>
+        </div>
+    </body>
+</html>

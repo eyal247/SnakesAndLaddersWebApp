@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Snakes And Ladders</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="scripts/jquery-2.1.1.min.js"></script>
+        <script src="scripts/gameScript.js"></script>
+        <link rel="stylesheet" href="css/gameScreenCss.css">
+        <link rel="stylesheet" href="css/buttonsCss.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="SHORTCUT ICON" href="images/logo.png">
+    </head>
+    <body>
+        <div id="game-screen-elements-container">
+            <span id="game-name"></span> 
+            <div id="players-labels">
+                <ul id="players-names-labels">
+                </ul>
+                <br><br>
+                <label id="curr-player-label">Current Player: </label>
+                <br><br>
+            </div>
+            <div id="dice-area">
+                <label id="turn-description"></label>
+                <button class="button wood" id="roll-dice-button" onclick="onRollDiceClick()">Roll Dice</button>
+                <div id="timer">
+                    <img src="./images/stopwatch.png" alt="timer" id="timer-img"><p id="seconds-label">90</p>
+                </div>
+                <br><br>
+                <div id="dice-result">6</div>
+                <label class="snl-label" id="left-snl-label"></label>
+                <label class="snl-label" id="right-snl-label"></label>
+                <br><br><br>
+                <button class="button wood" id="quit-button" onclick="onClickQuitGame()">Quit Game</button>
+            </div>
+            <div id="board-area">
+                <label id="num-of-tokens-label"></label>
+                <div id="board"></div>
+            </div>
+        </div>
+        <div id="end-game-msg-container">
+            <div id="game-msg">
+            </div>
+            <div id="back-to-menu-button-div">
+            </div>
+        </div>
+        <form id="chosen-cell-form" method="POST" action="playTurn">    
+            <input id='cell-number' type='hidden' name='cellNumber'/>
+            <input id='game-name-input' type='hidden' name='gameName' value=""/>
+            <input id='dice-result-input' type='hidden' name='diceResult'/>           
+        </form>
+    </body>
+</html>
