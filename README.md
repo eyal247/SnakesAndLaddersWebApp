@@ -1,4 +1,4 @@
-# SnakesAndLaddersWebApp
+# Snakes And Ladders Web App
 
 Link: http://snakesandladdersgame.elasticbeanstalk.com
 ==========================
